@@ -4,7 +4,7 @@
   "description": "1. [Description](#description) 1. [Demo](#demo) 1. [Design](#design) 1. [Features](#features) 1. [Technologies Used](#technologies-used) 1. [Project Challenges](#project-challenges) 1. [Thoughts and Observations](#thoughts-and-observations) 1. [Future Enhancements](#future-enhancements) 1. [Installation](#installation)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/JasneetSingh1/testing-pratice#readme",
   "devDependencies": {
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "babel-jest": "^29.7.0",
     "jest": "^29.7.0"
   }
 }
