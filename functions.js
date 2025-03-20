@@ -1,5 +1,6 @@
-export function sum(a, b) {
-    return a + b;
+export function capitalize(string) {
+    let result = string.replace(string[0], string[0].toUpperCase())
+    return result;
   }
 
 

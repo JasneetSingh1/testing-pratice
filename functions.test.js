@@ -1,5 +1,14 @@
-import { sum } from "./functions";
+import { 
+    capitalize,
+    
+} from "./functions";
 
-test('adds 1 + 2 to equal 3', () => {
-    expect(sum(1, 2)).toBe(3);
+// FUNCTION 1: CAPITALIZE
+test('Capitalize', () => {
+    expect(capitalize("hello")).toBe("Hello");
+  });
+
+
+  test('Capitalize', () => {
+    expect(capitalize("dog")).toBe("Dog");
   });
