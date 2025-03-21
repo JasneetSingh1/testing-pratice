@@ -21,3 +21,7 @@ test('Capitalize', () => {
 test('Reverse', ()=> {
     expect(reverseString("dog")).toBe("god");
 })
+
+test('Reverse', ()=> {
+    expect(reverseString("apple in a hole")).toBe("eloh a ni elppa");
+})
