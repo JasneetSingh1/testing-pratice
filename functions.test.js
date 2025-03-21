@@ -10,8 +10,8 @@ test('Capitalize', () => {
   });
 
 
-  test('Capitalize', () => {
-    expect(capitalize("dog")).toBe("Dog");
+  test('Capitalize: multiple word string', () => {
+    expect(capitalize("dog in")).toBe("Dog in");
   });
 
 
@@ -22,6 +22,11 @@ test('Reverse', ()=> {
     expect(reverseString("dog")).toBe("god");
 })
 
-test('Reverse', ()=> {
+test('Reverse: multiple word string', ()=> {
     expect(reverseString("apple in a hole")).toBe("eloh a ni elppa");
 })
+
+test('Reverse: multiple word string with Capital', ()=> {
+    expect(reverseString("Apple in a hole")).toBe("eloh a ni elppA");
+})
+
