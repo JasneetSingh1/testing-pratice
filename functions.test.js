@@ -30,3 +30,7 @@ test('Reverse: multiple word string with Capital', ()=> {
     expect(reverseString("Apple in a hole")).toBe("eloh a ni elppA");
 })
 
+
+// FUNCTION 3: Calculator
+
+
