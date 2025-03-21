@@ -37,3 +37,16 @@ export const Calculator = {
     return num1 * num2;
   }
 }
+
+export function caeserCipher(str, num) {
+  let alphabet = "abcdefghijklmnopqrstuvwxyz";
+  let result = "";
+
+  for (let i = 0; i < str.length; i++) {
+
+    const char = (str[i].charCodeAt()) + num;
+    result = result + String.fromCharCode(char);
+  }
+
+  return result;
+}

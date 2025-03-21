@@ -1,7 +1,8 @@
 import {
     Calculator,
     capitalize,
-    reverseString
+    reverseString,
+    caeserCipher
 
 } from "./functions";
 
@@ -56,4 +57,15 @@ test('Calculator: Divide ', () => {
 
 test('Calculator: Multiply ', () => {
     expect(Calculator.multiply(6, 2)).toBe(12);
+})
+
+
+// FUNCTION 4: CAESAR CIPHER
+
+test('Caesar Cipher:', () => {
+    expect(caeserCipher('xyz', 1)).toBe('abc');
+})
+
+test('Caesar Cipher: Case Preservation', () => {
+    expect(caeserCipher('HeLLo', 3)).toBe('KhOOr');
 })
