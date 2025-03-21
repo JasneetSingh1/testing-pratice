@@ -1,5 +1,6 @@
 import { 
     capitalize,
+    reverseString
     
 } from "./functions";
 
@@ -12,3 +13,11 @@ test('Capitalize', () => {
   test('Capitalize', () => {
     expect(capitalize("dog")).toBe("Dog");
   });
+
+
+// FUNCTION 2: REVERSESTRING
+
+
+test('Reverse', ()=> {
+    expect(reverseString("dog")).toBe("god");
+})
