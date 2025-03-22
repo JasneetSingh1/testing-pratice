@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "1. [Description](#description) 1. [Demo](#demo) 1. [Design](#design) 1. [Features](#features) 1. [Technologies Used](#technologies-used) 1. [Project Challenges](#project-challenges) 1. [Thoughts and Observations](#thoughts-and-observations) 1. [Future Enhancements](#future-enhancements) 1. [Installation](#installation)",
   "main": "index.js",
+ 
+
   "scripts": {
     "test": "jest"
   },
