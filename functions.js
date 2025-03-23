@@ -1,14 +1,12 @@
-
 export function capitalize(string) {
-  let result = string.replace(string[0], string[0].toUpperCase())
+  let result = string.replace(string[0], string[0].toUpperCase());
   return result;
 }
 
 export function reverseString(string) {
-
   let j = string.length - 1;
   let i = 0;
-  let result = Array.from({ length: string.length })
+  let result = Array.from({ length: string.length });
   while (i <= j) {
     let temp = string[i];
     result[i] = string[j];
@@ -21,7 +19,6 @@ export function reverseString(string) {
 }
 
 export const Calculator = {
-
   add: function (num1, num2) {
     return num1 + num2;
   },
@@ -36,22 +33,20 @@ export const Calculator = {
 
   multiply: function (num1, num2) {
     return num1 * num2;
-  }
-}
-
-
+  },
+};
 
 // FUNCTION 4: CAESAR CIPHER
 
-class Node{
-  constructor(value){
+class Node {
+  constructor(value) {
     this.value = value;
     this.next = null;
   }
 }
 
-class LinkedList{
-  constructor(){
+class LinkedList {
+  constructor() {
     this.head = null;
     this.tail = null;
   }
@@ -102,38 +97,48 @@ export function caeserCipher(str, num) {
   let alphabet = "abcdefghijklmnopqrstuvwxyz";
   let result = "";
   let alpha = new LinkedList();
-  for(let i = 0; i < alphabet.length ; i++){
+  for (let i = 0; i < alphabet.length; i++) {
     alpha.append(alphabet.charAt(i));
   }
-  
+
   let head = alpha.getHead();
   let end = alpha.getTail();
   end.next = head;
   for (let i = 0; i < str.length; i++) {
-
-    if(/^[A-Za-z]+$/.test(str[i])){
+    if (/^[A-Za-z]+$/.test(str[i])) {
       const char = str[i];
       let index = alpha.find(char.toLowerCase());
       let shifted = alpha.getAt(index + num);
-  
-      if(char == char.toUpperCase()){
+
+      if (char == char.toUpperCase()) {
         result = result + shifted.toUpperCase();
-      }
-      else{
+      } else {
         result = result + shifted.toLowerCase();
       }
-      
-    }
-
-    else{
+    } else {
       result = result + str[i];
     }
-
   }
-
 
   return result;
 }
 
+// FUNCTION 5: ANALYZE ARRAY
 
+export function analyzeArray(arr){
+  
+  let min = Math.min(...arr);
+  let max = Math.max(...arr);
+  let sum = 0;
+  for(let i  = 0; i < arr.length; i++){
+    sum = sum + arr[i];
+  }
+  let avg = sum / arr.length;
 
+  return {
+    average: avg,
+    min: min,
+    max: max,
+    length: arr.length
+ };
+}

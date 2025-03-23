@@ -3,6 +3,7 @@ import {
   capitalize,
   reverseString,
   caeserCipher,
+  analyzeArray
 } from "./functions";
 
 // FUNCTION 1: CAPITALIZE
@@ -67,3 +68,16 @@ test("Caesar Cipher: Case Preservation", () => {
 test("Caesar Cipher: Punctuation Preservation", () => {
   expect(caeserCipher("Hello, World!", 3)).toBe("Khoor, Zruog!");
 });
+
+
+
+// FUNCTION 5: ANALYZE ARRAY
+
+test("Analyze Array: Return Object with correct properties", () => {
+    expect(analyzeArray([0])).toEqual({average: 0, min: 0, max: 0, length: 1});
+  });
+
+
+  test("Analyze Array: Return Object with correct values", () => {
+    expect(analyzeArray([1,8,3,4,2,6])).toEqual({average: 4, min: 1, max: 8, length: 6});
+  });
