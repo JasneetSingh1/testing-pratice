@@ -1,8 +1,8 @@
+# Testing Practice
+
 ## Table of Contents
 
 1. [Description](#description)
-1. [Demo](#demo)
-1. [Design](#design)
 1. [Features](#features)
 1. [Technologies Used](#technologies-used)
 1. [Project Challenges](#project-challenges)
@@ -12,71 +12,66 @@
 
 ## Description
 
-Briefly describe your project here. Include the project's purpose, your motivation for creating it, and any goals or achievements it represents.
-
-## Demo
-
-Provide a link to a live demo. Use gh-pages, Netlify or Vercel.
-
-Click here: [https://link-to-your-demo-goes-here/](https://link-to-your-demo-goes-here/)
-
-## Design
-
-Add a screenshot or video here. 
-I recommend https://shots.so
-
-<div align='center'>
-<img src='./path/to/your/desktop-design-screenshot.png' alt='Screenshot of desktop design'>
-<img src='../path/to/your/mobile-design-screenshot.png' alt='Screenshot of mobile design'>
-</div>
+This project is a simple practice exercise to get comfortable with writing unit tests using Jest. The main goal is to test various functions and ensure they work as expected. This includes functions for string manipulation, basic arithmetic operations, Caesar cipher encryption, and array analysis.
 
 ## Features
 
-- List the key features of your project.
-- Highlight any unique functionalities or approaches you took in its development.
+- **capitalize**: Capitalizes the first character of a string.
+- **reverseString**: Reverses a given string.
+- **Calculator**: Supports basic arithmetic operations (add, subtract, multiply, divide).
+- **caeserCipher**: Encrypts a string using the Caesar cipher technique, preserving case and punctuation.
+- **analyzeArray**: Returns an object containing the average, min, max, and length of an array of numbers.
 
 ## Technologies Used
 
-List the technologies, libraries or frameworks used in the project.
+- JavaScript (ES6+)
+- Jest (for unit testing)
+- Babel (for ES6 module compatibility with Jest)
 
 ## Project Challenges
 
-Discuss any challenges you faced during the project's development, including how you overcame them or what you learned from these experiences.
+- Handling ES6 imports in Jest, which required setting up Babel.
+- Ensuring tests covered edge cases such as case preservation and punctuation in `caeserCipher`.
+- Implementing a linked list for character shifting in `caeserCipher` for an alternative approach to array-based shifting.
+- Floating point precision issues in the calculator functions, handled using `toBeCloseTo()` in tests.
 
 ## Thoughts and Observations
 
-Share any insights or reflections you have from working on the project. This could include your thoughts on the development process, design decisions etc.
+- Writing tests before implementation helped guide the development process and improved code reliability.
+- The linked list approach for Caesar cipher was an out of the box choice, but a simple array-based method would also be effective.
+- Testing with different input variations (single characters, multiple words, uppercase/lowercase cases) helped ensure robustness.
 
 ## Future Enhancements
 
-Outline any potential improvements or features you might want to add in the future. This shows the project's potential for growth and areas for further development.
+- Implement additional string manipulation functions for practice.
+- Extend the calculator to support more complex operations (exponents, modulus, etc.).
+- Improve error handling and edge case detection.
+- Explore different data structures for the Caesar cipher implementation.
 
 ## Installation
 
-Provide instructions on how to install and run your project locally.
+To install and run the project locally:
 
-Example below:
-
-1. Clone the GitHub repository to your local machine:
+1. Clone the GitHub repository:
 
    ```bash
-   git clone https://github.com/your-username/your-project-name.git
+   git clone https://github.com/JasneetSingh1/testing-pratice.git
    ```
 
-2. Navigate to the project's directory:
+2. Navigate to the project directory:
 
    ```bash
-   cd your-project-name
+   cd testing-pratice
    ```
 
-3. Install the project's dependencies using npm:
+3. Install dependencies:
 
    ```bash
    npm install
    ```
 
-4. To build the project:
+4. Run tests using Jest:
 
    ```bash
-   npm run build
-   ```
+   npm test
+   
