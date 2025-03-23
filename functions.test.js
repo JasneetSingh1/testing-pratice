@@ -15,7 +15,7 @@ test("Capitalize: multiple word string", () => {
   expect(capitalize("dog in")).toBe("Dog in");
 });
 
-// FUNCTION 2: REVERSESTRING
+// FUNCTION 2: REVERSE STRING
 
 test("Reverse", () => {
   expect(reverseString("dog")).toBe("god");
@@ -29,7 +29,7 @@ test("Reverse: multiple word string with Capital", () => {
   expect(reverseString("Apple in a hole")).toBe("eloh a ni elppA");
 });
 
-// FUNCTION 3: Calculator
+// FUNCTION 3: CALCULATOR
 
 test("Calculator: Add ", () => {
   expect(Calculator.add(2, 3)).toBe(5);
